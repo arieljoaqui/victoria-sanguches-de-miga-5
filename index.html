@@ -262,8 +262,7 @@ img{max-width:100%}
     if (editing) h += '<span class="chip" style="border-style:dashed"><input id="newo" type="text" placeholder="Nueva ocasión" style="width:130px;font:inherit;font-size:14px;border:0;background:transparent;color:var(--fg)"><button class="mini hot" data-a="ao">+</button></span>';
     h += '</div></section>';
 
-    h += '<footer><b>' + esc(S.t.brand) + '</b><br>' + ed('t.footer', 'span', '', S.t.footer) + '<br>' +
-      (editing ? '' : '<button class="login" data-a="login">Acceso dueño / administrador</button>') + '</footer></div>';
+    h += '<footer><b>' + esc(S.t.brand) + '</b><br>' + ed('t.footer', 'span', '', S.t.footer) + '</footer></div>';
     h += '<div class="bar"><a href="' + waLink() + '">Pedir por WhatsApp<small>' + esc(S.t.phone) + '</small></a></div>';
     document.getElementById('app').innerHTML = h;
     fx(th);
